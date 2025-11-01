@@ -10,8 +10,8 @@ OpenMetadata默认没有强制需修改默认账号密码
     fofa-query: title="OpenMetadata"
     shodan-query: title:"OpenMetadata"
 
-![](C:\Users\29942\Documents\GitHub\OpenMetadata-delaultlogin\1.png)
+![](1.png)
 
 复现成功
 
-![](C:\Users\29942\Documents\GitHub\OpenMetadata-delaultlogin\2.png)
+![](2.png)
